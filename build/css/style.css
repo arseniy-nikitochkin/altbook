@@ -34,7 +34,7 @@ html {
 }	
 
 .header__logo {
-	font-size: 4em;
+	font-size: 3.2em;
 	text-align: right;
 	letter-spacing: -0.03em;
 	padding: 1% 10% 0;
@@ -54,7 +54,7 @@ html {
 	background-color: #fff;
 	margin: 2% 10%;
 	list-style-type: none;
-	padding: 2em;
+	padding: 1.5em 2em;
 }
 
 .book-in-list__catalogue-image {
@@ -65,7 +65,7 @@ html {
 }
 
 .book-in-list__name {
-	font-size: 3em;
+	font-size: 2.5em;
 	text-decoration: none;
 	color: #000
 }
@@ -75,7 +75,7 @@ html {
 }
 
 .book-in-list__author {
-	font-size: 2em;
+	font-size: 1.8em;
 }
 
 .book-in-list__snippet {
