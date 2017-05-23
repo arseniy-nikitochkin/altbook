@@ -19,9 +19,12 @@ html {
 }
 
 .spinner {
-	display: block;
 	max-width: 100px;
-	margin: 0 auto;
+	position: absolute;
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
 }	
 
 .fa-book{
