@@ -1,6 +1,6 @@
 const React = require('react');
 const BooksStore = require('../stores/BooksStore');
-const { Link } = require('react-router');
+const { Link } = require('react-router-dom');
 
 const BooksList = React.createClass({
 

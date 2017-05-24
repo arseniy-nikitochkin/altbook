@@ -2,11 +2,11 @@ const React = require('react');
 const AltContainer = require('alt-container');
 const BookDetailsStore = require('../stores/BookDetailsStore');
 const BookInfo = require('../components/BookInfo.jsx');
-const { Link } = require('react-router');
+const { Link } = require('react-router-dom');
 
 const BookDetails = React.createClass({
 	componentDidMount() {
-		BookDetailsStore.fetchBookDetails(this.props.params.id);
+		BookDetailsStore.fetchBookDetails(this.props.match.params.id);
 	},
 
 	render() {
