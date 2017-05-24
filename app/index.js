@@ -1,12 +1,6 @@
 const React = require('react');
 const ReactDOM = require('react-dom');
-
-import {
-  BrowserRouter as Router,
-  Route,
-  Link
-} from 'react-router-dom'
-
+const { BrowserRouter: Router, Route, Link } = require('react-router-dom');
 const Books = require('./components/Books.jsx');
 const BookDetails = require('./components/BookDetails.jsx');
 
