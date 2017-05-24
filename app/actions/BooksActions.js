@@ -1,6 +1,7 @@
 const alt = require('../alt');
 
 class BooksActions {
+	
   updateBooks(books) {
     return books;
   }

@@ -3,6 +3,7 @@ const BooksActions = require('../actions/BooksActions');
 const BooksSource = require('../sources/BooksSource');
 
 class BooksStore {
+  
   constructor() {
     this.books = [];
     this.errorMessage = null;
