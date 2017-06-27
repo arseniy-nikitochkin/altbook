@@ -1,11 +1,11 @@
 const BooksActions = require('../actions/BooksActions');
 
 const BooksSource = {
-  
+
   fetchBooks() {
     return {
       remote() {
-         return fetch('/api/books/').then(result => result.json());
+        return fetch('/api/books/').then(result => result.json());
       },
 
       local() {

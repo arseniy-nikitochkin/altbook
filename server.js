@@ -10,24 +10,24 @@ const bookListJSON = require(filePath);
 filePath = path.join(__dirname, 'bookDetails.json');
 const bookDetails = require(filePath);
 
-app.use(express.static(path.join(__dirname, 'build')))
+app.use(express.static(path.join(__dirname, 'build')));
 
-app.get('/api/books/', function(req, res) {
-	res.send(bookListJSON);
+app.get('/api/books/', function (req, res) {
+  res.send(bookListJSON);
 });
 
-app.get('/api/book/:id', function(req, res) {
-	const id = req.params.id;
-	const book = bookDetails.find(bookDetail => bookDetail.id == id);
-	res.json(book);
+app.get('/api/book/:id', function (req, res) {
+  const id = req.params.id;
+  const book = bookDetails.find(bookDetail => bookDetail.id == id);
+  res.json(book);
 });
 
 // send all requests to index.html so browserHistory works
-app.get('*', function(req, res, next) {
-	res.sendFile(path.join(__dirname, 'build', 'index.html'));
+app.get('*', function (req, res) {
+  res.sendFile(path.join(__dirname, 'build', 'index.html'));
 });
 
-var PORT = process.env.PORT || 8080
-app.listen(PORT, function() {
+const PORT = process.env.PORT || 8080;
+app.listen(PORT, function () {
   console.log('Production Express server running at localhost:' + PORT)
-})
+});

@@ -1,6 +1,6 @@
 const React = require('react');
 const BooksStore = require('../stores/BooksStore');
-const { Link } = require('react-router-dom');
+const {Link} = require('react-router-dom');
 
 const BooksList = React.createClass({
 
@@ -19,21 +19,21 @@ const BooksList = React.createClass({
       )
     }
 
-    const { books } = this.props;
+    const {books} = this.props;
     return (
-      <ul> 
-      {books.map((book, i) => {
+      <ul>
+        {books.map((book, i) => {
           const bookPath = `/book/${book.id}`;
           return (
             <li key={i} className="book-in-list">
-                <img className="book-in-list__catalogue-image" src={book.src} />
-                <Link to={bookPath} className="book-in-list__name">{book.name}</Link>
-                <div className="book-in-list__author">{book.author}</div> 
-                <div className="book-in-list__snippet">{book.snippet}</div>
+              <img className="book-in-list__catalogue-image" src={book.src}/>
+              <Link to={bookPath} className="book-in-list__name">{book.name}</Link>
+              <div className="book-in-list__author">{book.author}</div>
+              <div className="book-in-list__snippet">{book.snippet}</div>
             </li>
           );
         })
-      }
+        }
       </ul>
     );
   }

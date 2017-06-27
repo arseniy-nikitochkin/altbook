@@ -3,8 +3,8 @@ const BookDetailsActions = require('../actions/BookDetailsActions');
 const BookDetailsSource = require('../sources/BookDetailsSource');
 
 class BookDetailsStore {
-  
-	constructor() {
+
+  constructor() {
     this.bookDetails = [];
     this.errorMessage = null;
 
@@ -22,12 +22,12 @@ class BookDetailsStore {
     this.errorMessage = null;
   }
 
-   handleFetchBookDetails() {
+  handleFetchBookDetails() {
     this.bookDetails = [];
   }
 
-   handleBookDetailsFailed(errorMessage) {
+  handleBookDetailsFailed(errorMessage) {
     this.errorMessage = errorMessage;
   }
 }
-  module.exports = alt.createStore(BookDetailsStore, 'BookDetailsStore');
+module.exports = alt.createStore(BookDetailsStore, 'BookDetailsStore');

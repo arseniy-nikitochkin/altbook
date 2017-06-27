@@ -1,7 +1,7 @@
 const alt = require('../alt');
 
 class BookDetailsActions {
-	
+
   updateBookDetails(bookDetails) {
     return bookDetails;
   }
